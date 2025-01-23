@@ -1,0 +1,104 @@
+.cards__adv {
+  /* background: #000; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 95px;
+  padding: 0 15px;
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.cards__title {
+  margin-bottom: 95px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #494037;
+}
+.card__box {
+  background: #ffffff;
+  width: 279px;
+  height: 279px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  animation: levitation 1.5s infinite ease-in-out,
+    glow 4s infinite alternate ease-in-out;
+}
+@keyframes levitation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+/* @keyframes glow {
+  0% {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2),
+      0px 0px 8px 4px rgba(11, 163, 156, 0.4);
+  }
+  50% {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3),
+      0px 0px 15px 8px rgba(31, 195, 165, 0.3);
+  }
+  100% {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2),
+      0px 0px 15px 10px rgba(0, 232, 193, 0.2);
+  }
+}
+.cards .card__gap:nth-child(1) .card__box {
+  animation-delay: 0s;
+}
+.cards .card__gap:nth-child(2) .card__box {
+  animation-delay: 0.3s;
+}
+.cards .card__gap:nth-child(3) .card__box {
+  animation-delay: 0.6s;
+}
+.cards .card__gap:nth-child(4) .card__box {
+  animation-delay: 0.9s;
+}
+.cards .card__gap:nth-child(5) .card__box {
+  animation-delay: 1.2s;
+} */
+.card__title {
+  width: 279px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  color: #494037;
+}
+.card__gap {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+@media (max-width: 546px) {
+  .cards__title {
+    margin-bottom: 95px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #494037;
+  }
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 395px;
+    margin-bottom: 95px;
+  }
+}

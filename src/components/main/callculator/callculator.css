@@ -1,0 +1,231 @@
+.callculator {
+  width: 30%;
+  /* height: 75%; */
+  height: max-content;
+  padding: 10px;
+  border-radius: 10px;
+  background: #efeeee;
+  position: absolute;
+  z-index: 100;
+  right: 5%;
+  top: 120px;
+  color: #494037;
+  
+  font-family: "Montserrat";
+  transition: right 0.3s ease, width 0.3s ease, height 0.3s ease;
+  & h2{
+    margin-bottom: 15px;
+  }
+  color: #494037;
+}
+#map {
+  width: 100%;
+  height: 400px;
+}
+.calc__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+.calc__form__item {
+  width: 100%;
+  color: #494037;
+  padding: 7px;
+  font-size: 16px;
+  border: 1px solid #494037;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #ffffff;
+  &, select{
+    border: none;
+    color: #494037;
+    font-family: "Montserrat";
+  }
+  &::placeholder{
+    color: #494037;
+    font-family: "Montserrat";
+  }
+}
+
+.calc__form__item:focus {
+  /* border-color: #0ba39c; */
+  outline: none;
+}
+
+.calc__form__button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background: #0ba39c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: "Montserrat";
+}
+
+.calc__form__button:hover {
+  background: #087f72;
+}
+
+@media (max-width: 1300px) {
+  .callculator {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .callculator.active {
+    width: 100%;
+    right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .callculator.active {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}
+
+.callculator-toggle {
+  position: fixed;
+  bottom: 45%;
+  right: 0%;
+  z-index: 101;
+  background: #0ba39c;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.map-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.map-container {
+  width: 90%;
+  max-width: 800px;
+  height: 70%;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container .close-map-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5a5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.map-container .close-map-button:hover {
+  background: #d04646;
+}
+
+.map-container .leaflet-container {
+  flex: 1;
+  border-radius: 10px;
+}
+
+.callculator-toggle {
+  position: fixed;
+  bottom: 45%;
+  right: 0%;
+  z-index: 101;
+  background: #0ba39c;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Обновление для маленьких экранов */
+@media (max-width: 560px) {
+  .callculator-toggle {
+    right: 5%;  /* Увеличьте расстояние от правого края */
+    bottom: 10%; /* Поднимите кнопку немного выше */
+    font-size: 30px; /* Уменьшите размер шрифта для лучшего отображения */
+  }
+}
+
+@media (max-width: 1300px) {
+  .callculator-toggle {
+    right: 3%; /* Сделайте кнопку чуть более видимой на больших мобильных устройствах */
+  }
+}
+.calc__form__button__chose{
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  background: #0ba39c;
+  color: white;
+  border: none;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+}
+.adress{
+  border-radius: 5px 5px 0px 0px ;
+  font-family: "Montserrat";
+}
+.textarea{
+  resize: none;
+  font-family: "Montserrat";
+}
+
+.close-map-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.close-map-btn:hover {
+  color: #f00;
+}
+    

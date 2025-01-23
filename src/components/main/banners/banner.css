@@ -1,0 +1,142 @@
+.banner__content {
+  z-index: 0;
+  border-radius: 15px;
+  padding: 15px;
+}
+.swiper{
+  border-radius: 15px;
+  margin-top: 110px;
+}
+.banners{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  border-radius: 15px;
+  
+}
+.one,
+.two,
+.three {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.one {
+  background-image: url(../../../assets/img/banner1.png);
+}
+.two {
+  background-image: url(../../../assets/img/banner2.png);
+}
+.three {
+  background-image: url(../../../assets/img/banner3.png);
+}
+.slide__banner {
+  border-radius: 15px;
+}
+.slide__banner-items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding: 15px;
+  height: 95vh;
+  width: 60%;
+}
+.slide__banner-title {
+  font-weight: 400;
+  font-size: 78px;
+  color: #efeeee;
+}
+.slide__banner-desc {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 35px;
+  color: #efeeee;
+}
+@media (max-width: 576px) {
+  .slide__banner-items {
+    width: 100%;
+  }
+  .slide__banner-title {
+    font-size: 32px;
+  }
+  .slide__banner-desc {
+    font-size: 16px;
+  }
+  .banners{
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .slide__banner-items {
+    width: 100%;
+  }
+  .slide__banner-title {
+    font-size: 50px;
+  }
+  .slide__banner-desc {
+    font-size: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slide__banner-title {
+    font-size: 50px;
+  }
+  .slide__banner-desc {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .slide__banner-title {
+    font-size: 50px;
+  }
+  .slide__banner-desc {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .slide__banner-title {
+    font-size: 68px;
+  }
+  .slide__banner-desc {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1921px) {
+  .banner__content {
+    margin-top: 15px;
+    z-index: 0;
+    border-radius: 15px;
+  }
+  .one,
+  .two,
+  .three {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide__banner {
+    border-radius: 15px;
+  }
+  .slide__banner-items {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 15px;
+    height: 95vh;
+    width: 60%;
+  }
+  .slide__banner-title {
+    font-weight: 400;
+    font-size: 78px;
+    color: #efeeee;
+  }
+  .slide__banner-desc {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 35px;
+    color: #efeeee;
+  }
+}
